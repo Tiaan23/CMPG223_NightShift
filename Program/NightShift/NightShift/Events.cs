@@ -10,22 +10,22 @@ using System.Windows.Forms;
 
 namespace NightShift
 {
-    public partial class Form1 : Form
+    public partial class Events : Form
     {
-        public Form1()
+        public Events()
         {
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void Events_Load(object sender, EventArgs e)
         {
 
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            HomePage HomePage = new HomePage();
-            HomePage.Show();
+            BackOffice BackOffice = new BackOffice();
+            BackOffice.Show();
             this.Hide();
         }
     }
