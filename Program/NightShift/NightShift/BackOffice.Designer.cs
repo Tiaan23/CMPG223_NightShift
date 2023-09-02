@@ -75,7 +75,7 @@
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.Location = new System.Drawing.Point(37, 246);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(134, 46);
+            this.button4.Size = new System.Drawing.Size(185, 46);
             this.button4.TabIndex = 3;
             this.button4.Text = "Event Details";
             this.button4.UseVisualStyleBackColor = true;

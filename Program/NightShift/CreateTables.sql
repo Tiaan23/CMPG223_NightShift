@@ -1,12 +1,15 @@
 Use NightShift
 Go
 
+delete from Product where Product_ID=9
 Create Table Product
 (
 	Product_ID int Identity(1,1) Primary Key,
 	Product_Name varchar(30),
 	Product_Description varchar(30),
-	Product_Price money
+	Product_Price money,
+	Event_ID int Foreign key references Event#(Event_ID)
+
 );
 
 Create table Artist
@@ -30,6 +33,7 @@ Create table Client
 	Client_Fname varchar(30),
 	Client_Lname varchar(30),
 	Client_Access  varchar(30),
+	Event_ID int Foreign key references Event#(Event_ID)
 );
 
 Create Table Event_Details
