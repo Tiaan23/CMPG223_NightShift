@@ -79,6 +79,7 @@ namespace NightShift
                 con.Close();
                 MessageBox.Show("Data has been captured");
                 ShowData();
+                txtCap.Text = "";
 
             }
         }

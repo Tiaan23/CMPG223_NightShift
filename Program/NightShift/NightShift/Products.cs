@@ -16,6 +16,7 @@ namespace NightShift
     {
         int index;
         int id;
+        int UpdateID;
      
         string connectionString = @"Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=NightShift;Data Source=LUMINARYWOLF357;";
 
@@ -83,7 +84,10 @@ namespace NightShift
                 con.Close();
                 MessageBox.Show("Data has been captured");
                 ShowData();
-              
+
+                txtPn.Text = "";
+                txtPrice.Text = "";
+                cbDescription.SelectedIndex = -1;
             }
         }
 
@@ -114,7 +118,19 @@ namespace NightShift
 
         private void dgvProduct_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-     
+            UpdateID = Convert.ToInt32(dgvProduct.SelectedRows[0].Cells[0].Value);
+            txtPn.Text = dgvProduct.SelectedRows[0].Cells[1].Value.ToString();
+            txtPrice.Text = dgvProduct.SelectedRows[0].Cells[3].Value.ToString();
+        }
+
+        private void button4_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolTip1_Popup(object sender, PopupEventArgs e)
+        {
+
         }
     }
     

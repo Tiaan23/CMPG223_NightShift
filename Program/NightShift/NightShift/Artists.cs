@@ -69,6 +69,9 @@ namespace NightShift
                 MessageBox.Show("Data has been captured");
                 ShowData();
 
+                txtName.Text = "";
+                txtEmail.Text = "";
+                txtSurname.Text = "";
             }
         }
 

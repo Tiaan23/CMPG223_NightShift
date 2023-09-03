@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Products));
             this.button1 = new System.Windows.Forms.Button();
             this.dgvProduct = new System.Windows.Forms.DataGridView();
@@ -41,6 +42,10 @@
             this.button3 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.dgvEvent = new System.Windows.Forms.DataGridView();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.toolTip2 = new System.Windows.Forms.ToolTip(this.components);
+            this.toolTip3 = new System.Windows.Forms.ToolTip(this.components);
+            this.toolTip4 = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dgvProduct)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEvent)).BeginInit();
             this.SuspendLayout();
@@ -76,6 +81,7 @@
             this.txtPn.Name = "txtPn";
             this.txtPn.Size = new System.Drawing.Size(148, 30);
             this.txtPn.TabIndex = 2;
+            this.toolTip2.SetToolTip(this.txtPn, "Enter product name");
             // 
             // label1
             // 
@@ -103,6 +109,7 @@
             this.txtPrice.Name = "txtPrice";
             this.txtPrice.Size = new System.Drawing.Size(148, 30);
             this.txtPrice.TabIndex = 5;
+            this.toolTip4.SetToolTip(this.txtPrice, "Enter price for product");
             // 
             // label3
             // 
@@ -126,6 +133,7 @@
             this.cbDescription.Name = "cbDescription";
             this.cbDescription.Size = new System.Drawing.Size(148, 33);
             this.cbDescription.TabIndex = 7;
+            this.toolTip3.SetToolTip(this.cbDescription, "Choos option from the dropdown box");
             // 
             // button2
             // 
@@ -134,6 +142,7 @@
             this.button2.Size = new System.Drawing.Size(183, 37);
             this.button2.TabIndex = 8;
             this.button2.Text = "Add Product";
+            this.toolTip1.SetToolTip(this.button2, "Press the Button to add product");
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -211,5 +220,9 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.DataGridView dgvEvent;
+        private System.Windows.Forms.ToolTip toolTip2;
+        private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.ToolTip toolTip3;
+        private System.Windows.Forms.ToolTip toolTip4;
     }
 }

@@ -61,7 +61,7 @@
             this.dgvEvent.Name = "dgvEvent";
             this.dgvEvent.RowHeadersWidth = 51;
             this.dgvEvent.RowTemplate.Height = 24;
-            this.dgvEvent.Size = new System.Drawing.Size(469, 278);
+            this.dgvEvent.Size = new System.Drawing.Size(570, 278);
             this.dgvEvent.TabIndex = 1;
             // 
             // button2

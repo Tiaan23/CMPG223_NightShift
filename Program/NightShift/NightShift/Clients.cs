@@ -81,6 +81,10 @@ namespace NightShift
                 con.Close();
                 MessageBox.Show("Data has been captured");
                 ShowData();
+
+                txtName.Text = "";
+                txtSur.Text = "";
+                cbAccess.SelectedIndex = -1;
             }
         }
 

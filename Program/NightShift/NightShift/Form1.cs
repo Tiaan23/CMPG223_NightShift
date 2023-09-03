@@ -12,6 +12,8 @@ namespace NightShift
 {
     public partial class Form1 : Form
     {
+        private const string userid1 = "CMPG223";
+        private const string password1 = "CMPG223";
         public Form1()
         {
             InitializeComponent();
@@ -24,9 +26,22 @@ namespace NightShift
 
         private void button1_Click(object sender, EventArgs e)
         {
-            HomePage HomePage = new HomePage();
-            HomePage.Show();
-            this.Hide();
+            string pass = textBox1.Text;
+            string user = textBox2.Text;
+
+            if (pass == textBox1.Text && user == textBox2.Text)
+            {
+                HomePage HomePage = new HomePage();
+                HomePage.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Incorrect password or user ID entered please try again");
+            }
+
+
+          
         }
     }
 }
